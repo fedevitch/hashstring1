@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace hashstring1
 {
-    public partial class Form1 : Form
+    public partial class HashString : Form
     {
-        public Form1()
+        public HashString()
         {
             InitializeComponent();
         }

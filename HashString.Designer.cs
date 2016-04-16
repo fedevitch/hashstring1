@@ -1,6 +1,6 @@
 ﻿namespace hashstring1
 {
-    partial class Form1
+    partial class HashString
     {
         /// <summary>
         /// Требуется переменная конструктора.
@@ -74,28 +74,28 @@
             // 
             this.outputHash.Location = new System.Drawing.Point(303, 28);
             this.outputHash.Name = "outputHash";
-            this.outputHash.Size = new System.Drawing.Size(240, 20);
+            this.outputHash.Size = new System.Drawing.Size(205, 20);
             this.outputHash.TabIndex = 6;
             // 
             // outputWord
             // 
             this.outputWord.Location = new System.Drawing.Point(303, 57);
             this.outputWord.Name = "outputWord";
-            this.outputWord.Size = new System.Drawing.Size(240, 20);
+            this.outputWord.Size = new System.Drawing.Size(205, 20);
             this.outputWord.TabIndex = 7;
             // 
-            // Form1
+            // HashString
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(555, 261);
+            this.ClientSize = new System.Drawing.Size(524, 102);
             this.Controls.Add(this.outputWord);
             this.Controls.Add(this.outputHash);
             this.Controls.Add(this.inputHash);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.inputWord);
             this.Controls.Add(this.button1);
-            this.Name = "Form1";
+            this.Name = "HashString";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
