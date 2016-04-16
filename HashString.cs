@@ -34,17 +34,19 @@ namespace hashstring1
             Int64 hash = h;
             List<int> positions = new List<int>();
 
-            for(int i = 0; hash > multiplier ;i++) {
-                positions.Add(Convert.ToInt16(Math.Floor((double)hash % (double)multiplier)));                
+            while(hash > multiplier) {
+                result += letters[(Convert.ToInt16(Math.Floor((double)hash % (double)multiplier)))];                
                 hash /= multiplier;
-            }
-
-            for (int i = positions.Count - 1; i >= 0; i--) {
-                if (positions[i] >= 0 && positions[i] <= letters.Length - 1)
-                    result += letters[positions[i]];
-            }
+            }            
             
-            return result;
+            return Reverse(result);
+        }
+
+        public static string Reverse(string s)
+        {
+            char[] charArray = s.ToCharArray();
+            Array.Reverse(charArray);
+            return new string(charArray);
         }
 
         private void button1_Click(object sender, EventArgs e)
