@@ -32,7 +32,6 @@ namespace hashstring1
         public String unhash(Int64 h)  {
             String result = "";
             Int64 hash = h;
-            List<int> positions = new List<int>();
 
             while(hash > multiplier) {
                 result += letters[(Convert.ToInt16(Math.Floor((double)hash % (double)multiplier)))];                
