@@ -34,7 +34,7 @@ namespace hashstring1
             Int64 hash = h;
 
             while(hash > multiplier) {
-                result += letters[(Convert.ToInt16(Math.Floor((double)hash % (double)multiplier)))];                
+                result += letters[Convert.ToInt16(hash % multiplier)];                
                 hash /= multiplier;
             }            
             
